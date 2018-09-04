@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app-container row">
+    <div class="app-main">
+        <section class="app-display">
+          <div class="display-row current-equation"><span></span></div>
+          <div class="display-row current-number"><span>0</span></div>
+        </section>
+        <section class="app-controls">
+            <div class="controls-row row">
+                <button class="control-btn func switch-positive-negative bigger-font">+/-</button>
+                <button class="control-btn func bigger-font percent">%</button>
+                <button class="control-btn func delete">del</button>
+                <button class="control-btn func clear-all last">ac</button>
+            </div>
+            <div class="controls-row row">
+                <button class="control-btn num seven">7</button>
+                <button class="control-btn num eight">8</button>
+                <button class="control-btn num nine">9</button>
+                <button class="control-btn func math-op divide last bigger-font">/</button>
+            </div>
+            <div class="controls-row row">
+                <button class="control-btn num four">4</button>
+                <button class="control-btn num five">5</button>
+                <button class="control-btn num six">6</button>
+                <button class="control-btn func math-op multiply last">x</button>
+            </div>
+            <div class="controls-row row">
+                <button class="control-btn num one">1</button>
+                <button class="control-btn num two">2</button>
+                <button class="control-btn num three">3</button>
+                <button class="control-btn func substract math-op last bigger-font">-</button>
+            </div>
+            <div class="controls-row last row">
+                <button class="control-btn num zero">0</button>
+                <button class="control-btn func float bigger-font bold">.</button>
+                <button class="control-btn func equal bigger-font">=</button>
+                <button class="control-btn func add math-op last bigger-font">+</button>
+            </div>
+        </section>
+    </div>
+    <section class="app-history">
+        <div class="history-past-equations">
+            <p class="empty-list-placeholder">No history to display</p>
+            <ul class="past-equations-list hidden">
+            </ul>
+        </div>
+        <i class="fas fa-trash hidden"></i>
+    </section>
+</main>
+<script src="view.js"></script>
+<script src="model.js"></script>
+<script src="controller.js"></script>
+<script src="script.js"></script>    
+</body>
+</html>
